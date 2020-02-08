@@ -1,0 +1,4 @@
+#  Filename: hostapd
+#  Place:  /etc/default/
+
+DAEMON_CONF="/etc/hostapd/hostapd.conf"

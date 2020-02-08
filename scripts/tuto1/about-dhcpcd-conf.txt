@@ -1,0 +1,11 @@
+Following line is to be used with hostapd, and ONLY with hostapd.
+
+nohook wpa_supplicant
+
+[normal]
+When not running hostapd, comment it (add # sign at start of line),
+otherwise the network icon will not show the wifi On/Off switch.
+
+[with hostapd]
+When RUNNING hostapd, this line prevent wpa_supplicant to manage the
+link with power-management which switch OFF the link after few seconds...

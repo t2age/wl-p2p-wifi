@@ -1,0 +1,23 @@
+#  Filename:  hostapd.con
+#  Place:  /etc/hostapd/
+# 
+
+#  Change below to the name of your WIFI interface
+interface=wlan0
+
+driver=nl80211
+hw_mode=g
+channel=6
+wmm_enabled=0
+macaddr_acl=0
+auth_algs=1
+ignore_broadcast_ssid=0
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP
+rsn_pairwise=CCMP
+
+#  Change here to your SSID and PASSPHRASE of choice
+ssid=YOUR-SSID
+wpa_passphrase=YOUR-PASSPHRASE-PASSWORD
+
