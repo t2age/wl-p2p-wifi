@@ -1,24 +1,20 @@
 
-Tutorial 1 - Peer WiFi  
+# Tutorial 1 - Peer WiFi  
   
 Following tutorial was done with Raspbian 10 Buster and hostapd 2.7  
   
-Recommendation  
-DO NOT use your main system disk (sdCard), instead, use a fresh system  
-or some "learn/lab/test" system to makes theses tutorials/experiments.  
-After completing all set of 3 tutorials you should be able to have  
-a good basic understanding of the whole matter, and should be able  
-to know the best way to use the knowledge...  
+**Recommendation**  
+DO NOT use your main system disk (sdCard), instead, use a fresh system or some "learn/lab/test" system to makes theses tutorials/experiments. After completing all set of 3 tutorials you should be able to have a good basic understanding of the whole matter, and should be able to know the best way to use the knowledge...  
   
-Text Editor:  
+**Text Editor:**  
 Use the text editor of your preference, like  
 Geany (GUI based) or Nano (terminal based), etc.  
   
   
-1.1.0 WiFi between 2 peers (or more).  
+**1.1.0 WiFi between 2 peers (or more).**  
   
 
-1.1.1 Install hostapd software  
+**1.1.1 Install hostapd software**  
 	sudo apt install hostapd  
   
 Temporarilly shutdown hostapd service  
@@ -30,7 +26,7 @@ Unmask (unlock) hostapd service
 	sudo systemctl unmask hostapd.service  
 	sudo systemctl enable hostapd.service  
   
-1.1.2 Create/Modify hostapd configuration file (/etc/hostapd/hostapd.conf)  
+**1.1.2 Create/Modify hostapd configuration file (/etc/hostapd/hostapd.conf)**  
 	sudo  nano  /etc/hostapd/hostapd.conf  
   
 Copy and Paste the following text  
