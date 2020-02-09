@@ -3,7 +3,7 @@
   
 Following tutorial was done with Raspbian 10 Buster and hostapd 2.7  
   
-*Inside the "slides" folder you can find the visual/pictorial version of this text.
+(Inside the "slides" folder you can find the visual/pictorial version of this text.)
   
 **Recommendation**  
 DO NOT use your main system disk (sdCard), instead, use a fresh system or some "learn/lab/test" system to makes theses tutorials/experiments. After completing all set of 3 tutorials you should be able to have a good basic understanding of the whole matter, and should be able to know the best way to use the knowledge...  
