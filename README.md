@@ -4,7 +4,7 @@ WiFi tools for P2P
 <img src="doc/wl-p2p-wifi-001.png" width=640px;/>
   
 ---
-<img src="doc/slides/wl-p2p-wifi-002.png" width=640px;/>
+<img src="doc/wl-p2p-wifi-002.png" width=640px;/>
   
 ---
 <img src="doc/wl-p2p-wifi-003.png" width=640px;/>
