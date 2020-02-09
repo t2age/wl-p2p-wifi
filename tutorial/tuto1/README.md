@@ -3,6 +3,8 @@
   
 Following tutorial was done with Raspbian 10 Buster and hostapd 2.7  
   
+*Inside the "slides" folder you can find the visual/pictorial version of this text.
+  
 **Recommendation**  
 DO NOT use your main system disk (sdCard), instead, use a fresh system or some "learn/lab/test" system to makes theses tutorials/experiments. After completing all set of 3 tutorials you should be able to have a good basic understanding of the whole matter, and should be able to know the best way to use the knowledge...  
   
@@ -125,7 +127,7 @@ Use the command "ip a" to display the actual names of your interfaces.
 Every time the computer REBOOT, you will need to run these lines!  
   
   
-**Congratulations, now you have an equivalent to home router device.**  
+**Congratulations, now you have an equivalent to home router device (part of).**  
 The key point is that you basically did 2 things:  
 - Created a WIFI ACCESS POINT (also called AP).  
 - Made the ACCESS POINT share the Internet.  
