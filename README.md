@@ -1,4 +1,4 @@
-# wl-p2p-wifi
+# Webelive P2P WIFI  
 WiFi tools for P2P
 
 <img src="tutorial/tuto1/slides/wl-p2p-wifi-001.png" width=640px;/>
@@ -40,5 +40,9 @@ WiFi tools for P2P
 <img src="tutorial/tuto1/slides/wl-p2p-wifi-013.png" width=640px;/>
   
 ---
-
-
+  
+  
+The first tutorial is here (text and graphical versions):
+https://github.com/t2age/wl-p2p-wifi/tree/master/tutorial/tuto1
+  
+  
