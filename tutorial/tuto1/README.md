@@ -51,40 +51,39 @@ wpa_passphrase=YOUR-PASSPHRASE-PASSWORD
   
   
 
-1.1.3 Edit the file /etc/hostapd, modify the variable "DAEMON_CONF".  
+**1.1.3 Edit the file /etc/hostapd, modify the variable "DAEMON_CONF".**  
 Find the line with "#DAEMON_CONF=",   
 Remove any "#" sign at the beginning of the line, if it exist.  
 add the following value:  
   
-DAEMON_CONF="/etc/hostapd/hostapd.conf"  
+	DAEMON_CONF="/etc/hostapd/hostapd.conf"  
   
   
-1.1.4 Edit the file /etc/dhcpcd.info, give the WIFI an static IP Address  
+**1.1.4 Edit the file /etc/dhcpcd.info, give the WIFI an static IP Address**  
   
 	sudo  nano  /etc/dhcpcd.info  
   
 Add the following lines at the end of the file.  
   
+```
 interface wlan0  
 static ip_address=192.168.50.1/24  
 nohook wpa_supplicant  
+```
+
   
-  
-1.1.5 Start/Restart hostapd service  
+**1.1.5 Start/Restart hostapd service**  
   
 	sudo service hostapd start  
   
   
-1.1.6 Reboot the system  
+**1.1.6 Reboot the system**  
   
 Reboot the system, so that you can use the installed software.   
   
   
   
-Congratulations, at this point you have a WIFI ACCESS POINT working.  
-Be aware that the other peer (guest) need to connect and setup manually the IP Address.  
-The software hostapd described here, DOES NOT provide IP Addresses to the peers that  
-will be connecting, we will look at it later in other separated tutorial...  
+Congratulations, at this point you have a WIFI ACCESS POINT working. Be aware that the other peer (guest) need to connect and setup manually the IP Address. The software hostapd described here, DOES NOT provide IP Addresses to the peers that will be connecting, we will look at it later in other separated tutorial...  
   
 Now you can go ahead and connect another peer(guests) compute to this peer(host)!  
   
@@ -96,16 +95,12 @@ showing how to exchange files between peers using, for example, webbrowser.
   
   
 
-1.2.0 Add Internet Routing to the peers.  
-
+**1.2.0 Add Internet Routing to the peers.**  
   
-
-1.2.1 Edit /etc/sysctl.conf, allow IPv4 FORWARD  
-
   
-Find the line "#net.ipv4.ip_forward=1", then, remove the sharp (#) signal,  
-at the start of the line. The sharp (#) signal means that this instruction  
-is not active, the computer does not read lines starting with sharp (#)...  
+**1.2.1 Edit /etc/sysctl.conf, allow IPv4 FORWARD**  
+  
+Find the line "#net.ipv4.ip_forward=1", then, remove the sharp (#) signal, at the start of the line. The sharp (#) signal means that this instruction is not active, the computer does not read lines starting with sharp (#)...  
   
 The line then becomes:  
   
@@ -113,13 +108,12 @@ The line then becomes:
   
 This step will require a reboot.  
 This step will require a reboot.  
-The next time the system start it will be able to route traffic (forward)  
-between peers and the Internet.  
+
+The next time the system start it will be able to route traffic (forward) between peers and the Internet.  
   
   
 
-1.2.2 Run the following iptables command line instructions  
-
+**1.2.2 Run the following iptables command line instructions**  
   
 	sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE  
 	sudo iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT  
@@ -131,17 +125,15 @@ Use the command "ip a" to display the actual names of your interfaces.
 Every time the computer REBOOT, you will need to run these lines!  
   
   
-Congratulations, now you have an equivalent to home router device.  
+**Congratulations, now you have an equivalent to home router device.**  
 The key point is that you basically did 2 things:  
 - Created a WIFI ACCESS POINT (also called AP).  
 - Made the ACCESS POINT share the Internet.  
   
-About RaspberryPI Zero with Internet Sharing  
-RPIZero Internet Sharing was done using an USB-to-Ethernet Adapter,  
-thus creating eth0 hardware on the RPIZero.  
-The wlan0 was the onboard WiFi Adapter.  
+**About RaspberryPI Zero with Internet Sharing**  
+RPIZero Internet Sharing was done using an USB-to-Ethernet Adapter, thus creating eth0 hardware on the RPIZero. The wlan0 was the onboard WiFi Adapter.  
   
   
-Debian/Ubuntu x86  
+**Debian/Ubuntu x86**  
 I did test installing hostapd and net sharing on Debian and Ubuntu in x86 platforms, everything works as described here with very little difference.  
 I will document these differences so you also can run these steps in a x86 machine as peer(host).  
