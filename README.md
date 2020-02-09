@@ -20,16 +20,12 @@ to know the best way to use the knowledge...
 Text Editor:  
 Use the text editor of your preference, like  
 Geany (GUI based) or Nano (terminal based), etc.  
-----------------------------------------------------------------------  
   
   
-----------------------------------------------------------------------  
 1.1.0 WiFi between 2 peers (or more).  
-----------------------------------------------------------------------  
   
------  
+
 1.1.1 Install hostapd software  
------  
 	sudo apt install hostapd  
   
 Temporarilly shutdown hostapd service  
@@ -41,9 +37,7 @@ Unmask (unlock) hostapd service
 	sudo systemctl unmask hostapd.service  
 	sudo systemctl enable hostapd.service  
   
------  
 1.1.2 Create/Modify hostapd configuration file (/etc/hostapd/hostapd.conf)  
------  
 	sudo  nano  /etc/hostapd/hostapd.conf  
   
 Copy and Paste the following text  
@@ -64,9 +58,8 @@ ssid=YOUR-SSID
 wpa_passphrase=YOUR-PASSPHRASE-PASSWORD  
   
   
------  
+
 1.1.3 Edit the file /etc/hostapd, modify the variable "DAEMON_CONF".  
------  
 Find the line with "#DAEMON_CONF=",   
 Remove any "#" sign at the beginning of the line, if it exist.  
 add the following value:  
@@ -74,9 +67,7 @@ add the following value:
 DAEMON_CONF="/etc/hostapd/hostapd.conf"  
   
   
------  
 1.1.4 Edit the file /etc/dhcpcd.info, give the WIFI an static IP Address  
------  
   
 	sudo  nano  /etc/dhcpcd.info  
   
@@ -87,16 +78,12 @@ static ip_address=192.168.50.1/24
 nohook wpa_supplicant  
   
   
------  
 1.1.5 Start/Restart hostapd service  
------  
   
 	sudo service hostapd start  
   
   
------  
 1.1.6 Reboot the system  
------  
   
 Reboot the system, so that you can use the installed software.   
   
@@ -116,13 +103,13 @@ showing how to exchange files between peers using, for example, webbrowser.
   
   
   
-----------------------------------------------------------------------  
+
 1.2.0 Add Internet Routing to the peers.  
-----------------------------------------------------------------------  
+
   
------  
+
 1.2.1 Edit /etc/sysctl.conf, allow IPv4 FORWARD  
------  
+
   
 Find the line "#net.ipv4.ip_forward=1", then, remove the sharp (#) signal,  
 at the start of the line. The sharp (#) signal means that this instruction  
@@ -138,9 +125,9 @@ The next time the system start it will be able to route traffic (forward)
 between peers and the Internet.  
   
   
------  
+
 1.2.2 Run the following iptables command line instructions  
------  
+
   
 	sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE  
 	sudo iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT  
