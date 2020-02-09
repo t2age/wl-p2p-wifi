@@ -15,6 +15,7 @@ Geany (GUI based) or Nano (terminal based), etc.
   
 
 **1.1.1 Install hostapd software**  
+  
 	sudo apt install hostapd  
   
 Temporarilly shutdown hostapd service  
@@ -27,10 +28,11 @@ Unmask (unlock) hostapd service
 	sudo systemctl enable hostapd.service  
   
 **1.1.2 Create/Modify hostapd configuration file (/etc/hostapd/hostapd.conf)**  
+  
 	sudo  nano  /etc/hostapd/hostapd.conf  
   
 Copy and Paste the following text  
-  
+```  
 interface=wlan0  
 driver=nl80211  
 hw_mode=g  
@@ -45,6 +47,7 @@ wpa_pairwise=TKIP
 rsn_pairwise=CCMP  
 ssid=YOUR-SSID  
 wpa_passphrase=YOUR-PASSPHRASE-PASSWORD  
+```
   
   
 
