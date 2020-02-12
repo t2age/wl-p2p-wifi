@@ -1,4 +1,4 @@
-# Tutorial 1 - P2P WIFI  
+# Tutorial 1 - Peer WIFI  
 WiFi tools for P2P
 
 <img src="tuto1-peer-wifi-001.png" width=640px;/>
