@@ -143,7 +143,7 @@ Every time the computer REBOOT, you will need to run these lines!
   
 
 **B2.3.0 Install DNSMASQ (DNS Forwarder and DHCP Server)**  
-
+  
   
   
 **B2.3.1 Install dnsmasq software**  
@@ -180,11 +180,12 @@ dhcp-range=192.168.50.50,192.168.50.100,255.255.255.0,24h
   
   
   
+  
 Congratulations,  
-now you can connect peer-guests without the  
-need of manual procedure to assign IP ADDRESS.  
+now you can connect peer-guests without the need of manual procedure to assign IP ADDRESS.  
   
 Just choose SSID and enter password/passphrase.  
+  
   
   
 **About DNSMASQ**  
