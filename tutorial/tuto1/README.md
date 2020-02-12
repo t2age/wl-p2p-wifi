@@ -62,9 +62,9 @@ add the following value:
 	DAEMON_CONF="/etc/hostapd/hostapd.conf"  
   
   
-**1.1.4 Edit the file /etc/dhcpcd.info, give the WIFI an static IP Address**  
+**1.1.4 Edit the file /etc/dhcpcd.conf, give the WIFI an static IP Address**  
   
-	sudo  nano  /etc/dhcpcd.info  
+	sudo  nano  /etc/dhcpcd.conf  
   
 Add the following lines at the end of the file.  
   
