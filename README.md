@@ -42,12 +42,20 @@ WiFi tools for P2P
 ---
   
   
-The first tutorial (1) is here (text and graphical versions):  
+**The first tutorial (1) is here (text and graphical versions):**  
+**TEXT**  
 https://github.com/t2age/wl-p2p-wifi/tree/master/tutorial/tuto1  
   
+**GRAPHICAL**  
+https://github.com/t2age/wl-p2p-wifi/tree/master/tutorial/tuto1/slides  
   
-The second tutorial (2) is here (text and graphical versions):  
+  
+**The second tutorial (2) is here (text and graphical versions):**  
+**TEXT**  
 https://github.com/t2age/wl-p2p-wifi/tree/master/tutorial/tuto2  
+  
+**GRAPHICAL**  
+https://github.com/t2age/wl-p2p-wifi/tree/master/tutorial/tuto2/slides  
   
   
 .
