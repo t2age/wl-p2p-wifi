@@ -1,0 +1,8 @@
+#  Change to file:  /etc/network/interfaces
+
+#  Add the following 3 lines at the end:
+
+auto br0
+iface br0 inet manual
+bridge_ports eth0 wlan0
+
