@@ -2,9 +2,6 @@
   
 Following tutorial was done with Raspbian 10 Buster and hostapd 2.7  
   
-Steps A3.1.x are EXACT THE SAME AS THE TUTORIAL 1!  
-  
-Step B2.3.x add the new instructions (Install DNSMASQ).  
   
   
 **Recommendation:**  
