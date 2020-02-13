@@ -164,6 +164,7 @@ If you already have done so, you DO NOT need to do it again (twice).
   
 **A3.3.4 Reboot the system**  
   
+	sudo  reboot  
   
   
 Congratulation, with this tutorial 3 perfomed, you have MANY different  
