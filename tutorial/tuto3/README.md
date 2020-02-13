@@ -2,7 +2,7 @@
   
 Following tutorial was done with Raspbian 10 Buster and hostapd 2.7  
   
-Steps A2.1.x and A2.2.x are EXACT THE SAME AS THE TUTORIAL 1!  
+Steps A3.1.x are EXACT THE SAME AS THE TUTORIAL 1!  
   
 Step B2.3.x add the new instructions (Install DNSMASQ).  
   
@@ -21,10 +21,10 @@ Geany (GUI based) or Nano (terminal based), etc.
   
   
   
-**A2.1.0 WiFi between 2 peers (or more) w/ automatic IP Address.**  
+**A3.1.0 WiFi between 2 peers (or more) w/ automatic IP Address.**  
   
   
-**A2.1.1 Install hostapd software**  
+**A3.1.1 Install hostapd software**  
   
 	sudo apt install hostapd  
   
@@ -38,7 +38,7 @@ Unmask (unlock) hostapd service
 	sudo systemctl enable hostapd.service  
   
   
-**A2.1.2 Create/Modify hostapd configuration file (/etc/hostapd/hostapd.conf)**  
+**A3.1.2 Create/Modify hostapd configuration file (/etc/hostapd/hostapd.conf)**  
   
 	sudo  nano  /etc/hostapd/hostapd.conf  
   
@@ -68,7 +68,7 @@ wpa_passphrase=YOUR-PASSPHRASE-PASSWORD
   
   
   
-**A2.1.3 Edit the file /etc/hostapd, modify the variable "DAEMON_CONF".**  
+**A3.1.3 Edit the file /etc/hostapd, modify the variable "DAEMON_CONF".**  
   
 Find the line with "#DAEMON_CONF=",   
 Remove any "#" sign at the beginning of the line, if it exist.  
@@ -80,7 +80,7 @@ DAEMON_CONF="/etc/hostapd/hostapd.conf"
   
   
   
-**A2.1.4 Edit the file /etc/dhcpcd.conf, give the WIFI an static IP Address**  
+**A3.1.4 Edit the file /etc/dhcpcd.conf, give the WIFI an static IP Address**  
   
   
 	sudo  nano  /etc/dhcpcd.conf  
@@ -95,30 +95,23 @@ nohook wpa_supplicant
   
   
   
-**A2.1.5 Start/Restart hostapd service**  
+**A3.1.5 Start/Restart hostapd service**  
   
   
 	sudo service hostapd start  
   
   
   
-**A2.1.6 Reboot the system**  
+**A3.1.6 Reboot the system**  
   
   
 Reboot the system, so that you can use the installed software.   
   
   
   
+.
 
-
-  
-  
-  
-  
-
-
-
-**3.2.0 Add Internet Routing to the peers (iptables rules)**  
+**A3.2.0 Add Internet Routing to the peers (iptables rules)**  
   
 THIS STEP IS NOT USED IN THIS TUTORIAL 3!  
   
@@ -128,16 +121,16 @@ Please, move to the next step 3.3.0
   
   
   
-**3.3.0 Install and Configure Bridge Software**  
+**A3.3.0 Install and Configure Bridge Software**  
   
   
-**3.3.1 Install bridge-utils**  
+**A3.3.1 Install bridge-utils**  
   
 	sudo apt install bridge-utils
   
   
   
-**3.3.2 Configure system  /etc/network/interfaces**  
+**A3.3.2 Configure system  /etc/network/interfaces**  
   
 	sudo nano  /etc/network/interfaces  
   
@@ -151,7 +144,7 @@ bridge_ports eth0 wlan0
   
   
   
-**3.3.3 Just Reminder, Modify  /etc/hostapd/hostapd.conf**  
+**A3.3.3 Just Reminder, Modify  /etc/hostapd/hostapd.conf**  
   
 This step just repeat what the step 3.1.2 did, so it is a repetition...  
   
@@ -172,7 +165,7 @@ If you already have done so, you DO NOT need to do it again (twice).
   
   
   
-**3.3.4 Reboot the system**  
+**A3.3.4 Reboot the system**  
   
   
   
