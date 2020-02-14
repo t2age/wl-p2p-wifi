@@ -52,7 +52,7 @@ https://github.com/t2age/wl-p2p-wifi/tree/master/tutorial/tuto1/slides
 **DOC-PDF**  
 https://github.com/t2age/wl-p2p-wifi/tree/master/tutorial/tuto1/doc-pdf  
   
-  
+---
   
 **The second tutorial (2) is here text, graphical and doc-pdf versions):**  
 **TEXT**  
@@ -64,7 +64,7 @@ https://github.com/t2age/wl-p2p-wifi/tree/master/tutorial/tuto2/slides
 **DOC-PDF**  
 https://github.com/t2age/wl-p2p-wifi/tree/master/tutorial/tuto2/doc-pdf
   
-  
+---
   
 **The thirdd tutorial (3) is here (text, graphical and doc-pdf versions):**  
 **TEXT**  
