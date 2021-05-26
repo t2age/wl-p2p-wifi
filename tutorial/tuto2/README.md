@@ -63,7 +63,7 @@ wpa_passphrase=YOUR-PASSPHRASE-PASSWORD
   
   
   
-**A2.1.3 Edit the file /etc/hostapd, modify the variable "DAEMON_CONF".**  
+**A2.1.3 Edit the file /etc/default/hostapd, modify the variable "DAEMON_CONF".**  
   
 Find the line with "#DAEMON_CONF=",   
 Remove any "#" sign at the beginning of the line, if it exist.  
